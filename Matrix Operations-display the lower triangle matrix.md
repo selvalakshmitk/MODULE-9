@@ -13,20 +13,35 @@ To write a Python program to read a matrix and display the lower triangle Matrix
 
 ## 💻 PROGRAM:
 def read_matrix(n):
+    
     matrix=[[0]*n for row in range(n)]
+    
     for i in range(n):
+    
         lines=list(map(int,input().split()))
+        
         for j in range(n):
+        
             matrix[i][j]=lines[j]
+    
     return matrix
+
 def print_matrix(M):
+
     print("Matrix:")
+    
     for i in range(len(M)):
+    
         for j in range(len(M[0])):
+        
             if(i>j or i==j):
+            
                 print(M[i][j],end=" ")
+           
             else:
+            
                 print(0,end=" ")
+       
         print()
 
 ## OUTPUT:
