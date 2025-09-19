@@ -12,13 +12,21 @@ To write a Python program to store a scalar multiple of a set of numbers in a li
 
 ## 💻 PROGRAM:
 n=int(input())
+
 scl=int(input())
+
 l=[]
+
 for i in range(n):
+
     x=float(input())
+    
     l.append(x)
+
 sq_l=[item*scl for item in l]
+
 print(l)
+
 print(sq_l)
 
 ## OUTPUT:
